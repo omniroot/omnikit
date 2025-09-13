@@ -32,4 +32,4 @@ const themeConfig = defineConfig({
   },
 });
 
-export const system = createSystem(defaultBaseConfig, themeConfig);
+export const omnikit = createSystem(defaultBaseConfig, themeConfig);
