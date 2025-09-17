@@ -33,3 +33,4 @@ const themeConfig = defineConfig({
 });
 
 export const omnikit = createSystem(defaultBaseConfig, themeConfig);
+export default omnikit;
