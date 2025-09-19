@@ -22,6 +22,12 @@ export const colors = defineSemanticTokens.colors({
   subtext: {
     value: {
       _light: "",
+      _dark: "hsl(0 0 75)",
+    },
+  },
+  subtext2: {
+    value: {
+      _light: "",
       _dark: "hsl(0 0 50)",
     },
   },
@@ -43,6 +49,12 @@ export const colors = defineSemanticTokens.colors({
       _dark: "hsl(0 0 10)",
     },
   },
+  hover_variant: {
+    value: {
+      _light: "",
+      _dark: "hsl(0 0 14)",
+    },
+  },
   outline: {
     value: {
       _light: "",
@@ -52,18 +64,18 @@ export const colors = defineSemanticTokens.colors({
   outline_variant: {
     value: {
       _light: "",
-      _dark: "hsl(0 0 14)",
+      _dark: "hsl(0 0 16)",
     },
   },
 
-  // bg: {
-  //   DEFAULT: {
-  //     value: {
-  //       _light: "{colors.white}",
-  //       _dark: "{colors.black}",
-  //     },
-  //   },
-  // },
+  bg: {
+    DEFAULT: {
+      value: {
+        _light: "{colors.surface}",
+        _dark: "{colors.surface}",
+      },
+    },
+  },
 });
 
 // export const colors = defineSemanticTokens.colors({
