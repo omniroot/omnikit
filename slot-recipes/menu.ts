@@ -1,4 +1,4 @@
-import { defineSlotRecipe } from "@chakra-ui/react"
+import { defineSlotRecipe } from "@chakra-ui/react";
 
 export const menuSlotRecipe = defineSlotRecipe({
   className: "chakra-menu",
@@ -22,13 +22,14 @@ export const menuSlotRecipe = defineSlotRecipe({
   base: {
     content: {
       outline: 0,
-      bg: "bg.panel",
+      bg: "surface",
       boxShadow: "lg",
-      color: "fg",
+      color: "text",
       maxHeight: "var(--available-height)",
       "--menu-z-index": "zIndex.dropdown",
       zIndex: "calc(var(--menu-z-index) + var(--layer-index, 0))",
-      borderRadius: "l2",
+      border: "1px solid {colors.outline}",
+      borderRadius: "sm",
       overflow: "hidden",
       overflowY: "auto",
       _open: {
@@ -42,9 +43,9 @@ export const menuSlotRecipe = defineSlotRecipe({
     },
     item: {
       textDecoration: "none",
-      color: "fg",
+      color: "text",
       userSelect: "none",
-      borderRadius: "l1",
+      borderRadius: "sm",
       width: "100%",
       display: "flex",
       cursor: "menuitem",
@@ -53,6 +54,9 @@ export const menuSlotRecipe = defineSlotRecipe({
       position: "relative",
       flex: "0 0 auto",
       outline: 0,
+      _hover: {
+        bg: "hover",
+      },
       _disabled: {
         layerStyle: "disabled",
       },
@@ -91,7 +95,7 @@ export const menuSlotRecipe = defineSlotRecipe({
     },
     separator: {
       height: "1px",
-      bg: "bg.muted",
+      bg: "outline",
       my: "1",
       mx: "-1",
     },
@@ -147,4 +151,4 @@ export const menuSlotRecipe = defineSlotRecipe({
     size: "md",
     variant: "subtle",
   },
-})
+});

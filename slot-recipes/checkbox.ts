@@ -1,4 +1,4 @@
-import { defineSlotRecipe } from "@chakra-ui/react"
+import { defineSlotRecipe } from "@chakra-ui/react";
 
 export const checkboxSlotRecipe = defineSlotRecipe({
   slots: ["root", "label", "control", "indicator", "group"],
@@ -19,7 +19,7 @@ export const checkboxSlotRecipe = defineSlotRecipe({
       color: "white",
       borderWidth: "1px",
       borderColor: "transparent",
-      borderRadius: "l1",
+      borderRadius: "sm",
       cursor: "checkbox",
       focusVisibleRing: "outside",
       _icon: {
@@ -103,7 +103,7 @@ export const checkboxSlotRecipe = defineSlotRecipe({
       },
       solid: {
         control: {
-          borderColor: "border.emphasized",
+          borderColor: "outline",
           "&:is([data-state=checked], [data-state=indeterminate])": {
             bg: "colorPalette.solid",
             color: "colorPalette.contrast",
@@ -126,4 +126,4 @@ export const checkboxSlotRecipe = defineSlotRecipe({
     variant: "solid",
     size: "md",
   },
-})
+});
