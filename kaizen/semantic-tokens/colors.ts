@@ -10,7 +10,7 @@ export const colors = defineSemanticTokens.colors({
   surface: {
     value: {
       _light: "",
-      _dark: "hsl(0 0 4)",
+      _dark: "hsl(220 8 8)",
     },
   },
   text: {
@@ -34,7 +34,7 @@ export const colors = defineSemanticTokens.colors({
   surface_container: {
     value: {
       _light: "",
-      _dark: "hsl(0 0 6)",
+      _dark: "#28282A",
     },
   },
   surface_container_high: {
@@ -46,7 +46,7 @@ export const colors = defineSemanticTokens.colors({
   hover: {
     value: {
       _light: "",
-      _dark: "hsl(0 0 10)",
+      _dark: "#28282A",
     },
   },
   hover_variant: {
@@ -72,7 +72,7 @@ export const colors = defineSemanticTokens.colors({
     DEFAULT: {
       value: {
         _light: "{colors.surface}",
-        _dark: "{colors.surface}",
+        _dark: "red",
       },
     },
   },
