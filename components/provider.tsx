@@ -1,10 +1,10 @@
 "use client";
 
-import omnikit, { themes } from "@/theme";
+import { themes } from "@/theme";
 import { ChakraProvider } from "@chakra-ui/react";
+import { useState } from "react";
 import { ColorModeProvider, type ColorModeProviderProps } from "./color-mode";
 import "./provider.css";
-import { useState } from "react";
 
 export function OmnikitProvider(props: ColorModeProviderProps) {
   const [theme, setTheme] = useState("linear");
