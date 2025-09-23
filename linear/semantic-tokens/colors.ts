@@ -7,12 +7,6 @@ export const colors = defineSemanticTokens.colors({
   text_primary: {
     value: "#271001",
   },
-  bg: {
-    DEFAULT: {
-      _dark: "red",
-      _light: "blue",
-    },
-  },
   surface: {
     value: {
       _light: "",
@@ -71,15 +65,6 @@ export const colors = defineSemanticTokens.colors({
     value: {
       _light: "",
       _dark: "hsl(0 0 16)",
-    },
-  },
-
-  bg: {
-    DEFAULT: {
-      value: {
-        _light: "{colors.surface}",
-        _dark: "{colors.surface}",
-      },
     },
   },
 });
