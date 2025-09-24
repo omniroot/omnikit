@@ -1,8 +1,4 @@
-import {
-  createSystem,
-  defaultBaseConfig,
-  defineConfig,
-} from "@chakra-ui/react";
+import { createSystem, defaultBaseConfig, defineConfig } from "@chakra-ui/react";
 import { animationStyles } from "./animation-styles.ts";
 import { breakpoints } from "./breakpoints.ts";
 import { globalCss } from "./global-css.ts";
@@ -15,21 +11,21 @@ import { textStyles } from "./text-styles.ts";
 import { tokens } from "./tokens/index.ts";
 
 const themeConfig = defineConfig({
-  preflight: true,
-  cssVarsPrefix: "chakra",
-  cssVarsRoot: ":where(:root, :host)",
-  globalCss,
-  theme: {
-    breakpoints,
-    keyframes,
-    tokens,
-    semanticTokens,
-    recipes,
-    slotRecipes,
-    textStyles,
-    layerStyles,
-    animationStyles,
-  },
+	preflight: true,
+	cssVarsPrefix: "chakra",
+	cssVarsRoot: ":where(:root, :host)",
+	globalCss,
+	theme: {
+		breakpoints,
+		keyframes,
+		tokens,
+		semanticTokens,
+		recipes,
+		slotRecipes,
+		textStyles,
+		layerStyles,
+		animationStyles,
+	},
 });
 
 export const kaizenTheme = createSystem(defaultBaseConfig, themeConfig);

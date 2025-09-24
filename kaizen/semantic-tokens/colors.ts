@@ -1,81 +1,81 @@
 import { defineSemanticTokens } from "@chakra-ui/react";
 
 export const colors = defineSemanticTokens.colors({
-  primary: {
-    value: "#F87321",
-  },
-  text_primary: {
-    value: "#271001",
-  },
-  surface: {
-    value: {
-      _light: "",
-      _dark: "hsl(220 8 8)",
-    },
-  },
-  text: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 95)",
-    },
-  },
-  subtext: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 75)",
-    },
-  },
-  subtext2: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 50)",
-    },
-  },
-  surface_container: {
-    value: {
-      _light: "",
-      _dark: "#28282A",
-    },
-  },
-  surface_container_high: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 8)",
-    },
-  },
-  hover: {
-    value: {
-      _light: "",
-      _dark: "#28282A",
-    },
-  },
-  hover_variant: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 14)",
-    },
-  },
-  outline: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 12)",
-    },
-  },
-  outline_variant: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 16)",
-    },
-  },
+	primary: {
+		value: "#F87321",
+	},
+	text_primary: {
+		value: "#271001",
+	},
+	surface: {
+		value: {
+			_light: "",
+			_dark: "hsl(220 8 8)",
+		},
+	},
+	text: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 95)",
+		},
+	},
+	subtext: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 75)",
+		},
+	},
+	subtext2: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 50)",
+		},
+	},
+	surface_container: {
+		value: {
+			_light: "",
+			_dark: "#28282A",
+		},
+	},
+	surface_container_high: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 8)",
+		},
+	},
+	hover: {
+		value: {
+			_light: "",
+			_dark: "#28282A",
+		},
+	},
+	hover_variant: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 14)",
+		},
+	},
+	outline: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 12)",
+		},
+	},
+	outline_variant: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 16)",
+		},
+	},
 
-  bg: {
-    DEFAULT: {
-      value: {
-        _light: "{colors.surface}",
-        _dark: "red",
-      },
-    },
-  },
+	bg: {
+		DEFAULT: {
+			value: {
+				_light: "{colors.surface}",
+				_dark: "red",
+			},
+		},
+	},
 });
 
 // export const colors = defineSemanticTokens.colors({
