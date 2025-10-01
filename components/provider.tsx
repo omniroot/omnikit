@@ -1,17 +1,23 @@
 "use client";
 
-import { themes } from "@/theme";
 import { ChakraProvider } from "@chakra-ui/react";
 import { useState } from "react";
+import { themes } from "@/theme";
 import { ColorModeProvider, type ColorModeProviderProps } from "./color-mode";
 import "./provider.css";
 
-export function OmnikitProvider(props: ColorModeProviderProps) {
-	const [theme] = useState("linear");
+interface IOmnikitProvider extends ColorModeProviderProps {
+	theme?: "linear" | "coffee";
+}
+
+export function OmnikitProvider({
+	theme = "linear",
+	...props
+}: IOmnikitProvider) {
+	const [selectedTheme] = useState(theme);
 
 	return (
-		// @ts-expect-error
-		<ChakraProvider value={themes[theme]}>
+		<ChakraProvider value={themes[selectedTheme]}>
 			<ColorModeProvider {...props} />
 		</ChakraProvider>
 	);
