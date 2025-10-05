@@ -1,128 +1,128 @@
 import { defineRecipe } from "@chakra-ui/react";
 
 export const buttonRecipe = defineRecipe({
-	className: "chakra-button",
-	base: {
-		display: "inline-flex",
-		appearance: "none",
-		alignItems: "center",
-		justifyContent: "center",
-		userSelect: "none",
-		position: "relative",
-		borderRadius: "md",
-		whiteSpace: "nowrap",
-		verticalAlign: "middle",
-		borderWidth: "1px",
-		borderColor: "transparent",
-		cursor: "button",
-		flexShrink: "0",
-		outline: "0",
-		lineHeight: "1.2",
-		isolation: "isolate",
-		fontWeight: "medium",
-		transitionProperty: "scale, background",
-		transitionDuration: "moderate",
-		focusVisibleRing: "outside",
-		// px: "2",
-		_disabled: {
-			// layerStyle: "disabled",
-			color: "subtext",
-			cursor: "auto",
-		},
-		_icon: {
-			w: "24px",
-			h: "24px",
-		},
-		_active: {
-			scale: 0.95,
-		},
-	},
-	variants: {
-		variant: {
-			primary: {
-				bg: "primary",
-				color: "text_primary",
-				borderColor: "transparent",
-				_hover: {
-					bg: "primary/90",
-				},
-				_expanded: {
-					bg: "primary/90",
-				},
-			},
-			surface: {
-				bg: "surface_container_high",
-				color: "text",
-				borderColor: "outline",
-				_hover: {
-					bg: "hover/90",
-				},
-				_expanded: {
-					bg: "hover/90",
-				},
-			},
-			outline: {
-				bg: "transparent",
-				color: "text",
-				borderColor: "outline",
-				_hover: {
-					bg: "hover/90",
-				},
-				_expanded: {
-					bg: "hover/90",
-				},
-			},
-			ghost: {
-				bg: "transparent",
-				color: "text",
-				borderColor: "transparent",
-				_hover: {
-					bg: "hover/90",
-				},
-				_expanded: {
-					bg: "hover/90",
-				},
-			},
-		},
+  className: "chakra-button",
+  base: {
+    display: "inline-flex",
+    appearance: "none",
+    alignItems: "center",
+    justifyContent: "center",
+    userSelect: "none",
+    position: "relative",
+    borderRadius: "md",
+    whiteSpace: "nowrap",
+    verticalAlign: "middle",
+    borderWidth: "1px",
+    borderColor: "transparent",
+    cursor: "button",
+    flexShrink: "0",
+    outline: "0",
+    lineHeight: "1.2",
+    isolation: "isolate",
+    fontWeight: "medium",
+    transitionProperty: "scale, background",
+    transitionDuration: "moderate",
+    focusVisibleRing: "outside",
+    // px: "2",
+    _disabled: {
+      // layerStyle: "disabled",
+      color: "subtext",
+      cursor: "auto",
+    },
+    _icon: {
+      w: "24px",
+      h: "24px",
+    },
+    _active: {
+      scale: 0.95,
+    },
+  },
+  variants: {
+    variant: {
+      primary: {
+        bg: "primary",
+        color: "text_primary",
+        borderColor: "transparent",
+        _hover: {
+          bg: "primary/90",
+        },
+        _expanded: {
+          bg: "primary/90",
+        },
+      },
+      surface: {
+        bg: "surface_container_high",
+        color: "text",
+        borderColor: "outline",
+        _hover: {
+          bg: "hover/90",
+        },
+        _expanded: {
+          bg: "hover/90",
+        },
+      },
+      outline: {
+        bg: "transparent",
+        color: "text",
+        borderColor: "outline",
+        _hover: {
+          bg: "hover/90",
+        },
+        _expanded: {
+          bg: "hover/90",
+        },
+      },
+      ghost: {
+        bg: "transparent",
+        color: "text",
+        borderColor: "transparent",
+        _hover: {
+          bg: "hover/90",
+        },
+        _expanded: {
+          bg: "hover/90",
+        },
+      },
+    },
 
-		size: {
-			sm: {
-				minW: "32px",
-				h: "32px",
-				p: "4px 8px",
-				gap: "2",
-				_icon: {
-					w: "20px",
-					h: "20px",
-				},
-			},
-			md: {
-				minW: "40px",
-				h: "40px",
-				p: "8px 12px",
-				gap: "2",
-				_icon: {
-					w: "24px",
-					h: "24px",
-				},
-			},
-			lg: {
-				minW: "48px",
-				h: "48px",
-				p: "12px 16px",
-				gap: "2",
-				_icon: {
-					w: "28px",
-					h: "28px",
-				},
-			},
-		},
-	},
+    size: {
+      sm: {
+        minW: "32px",
+        h: "32px",
+        p: "4px 8px",
+        gap: "2",
+        _icon: {
+          w: "18px",
+          h: "18px",
+        },
+      },
+      md: {
+        minW: "40px",
+        h: "40px",
+        p: "8px 12px",
+        gap: "2",
+        _icon: {
+          w: "20px",
+          h: "20px",
+        },
+      },
+      lg: {
+        minW: "48px",
+        h: "48px",
+        p: "12px 16px",
+        gap: "2",
+        _icon: {
+          w: "22px",
+          h: "22px",
+        },
+      },
+    },
+  },
 
-	defaultVariants: {
-		size: "md",
-		variant: "surface",
-	},
+  defaultVariants: {
+    size: "md",
+    variant: "surface",
+  },
 });
 
 // export const buttonRecipe = defineRecipe({

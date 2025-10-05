@@ -14,7 +14,7 @@ export const skeletonRecipe = defineRecipe({
         pointerEvents: "none",
         userSelect: "none",
         flexShrink: "0",
-        bg: "primary",
+        bg: "hover",
         "&::before, &::after, *": {
           visibility: "hidden",
         },

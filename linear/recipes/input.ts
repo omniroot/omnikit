@@ -9,7 +9,7 @@ export const inputRecipe = defineRecipe({
 		position: "relative",
 		appearance: "none",
 		textAlign: "start",
-		borderRadius: "l2",
+		borderRadius: "md",
 		_disabled: {
 			layerStyle: "disabled",
 		},
