@@ -1,82 +1,82 @@
 import { defineSemanticTokens } from "@chakra-ui/react";
 
 export const colors = defineSemanticTokens.colors({
-  primary: {
-    value: "#BF7656",
-  },
-  text_primary: {
-    value: "#271001",
-  },
+	primary: {
+		value: "#BF7656",
+	},
+	text_primary: {
+		value: "#271001",
+	},
 
-  text: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.90 0.02 54.73 / 1)",
-    },
-  },
-  subtext: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.70 0.04 54.73 / 1)",
-    },
-  },
-  subtext2: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 50)",
-    },
-  },
-  surface: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.16 0.02 54.73 / 1)",
-    },
-  },
-  surface_container: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.20 0.02 54.73 / 1)",
-    },
-  },
-  surface_container_high: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.22 0.02 54.73 / 1)",
-    },
-  },
-  hover: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.30 0.03 54.73 / 1)",
-    },
-  },
-  hover_variant: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 14)",
-    },
-  },
-  outline: {
-    value: {
-      _light: "",
-      _dark: "oklch(0.30 0.02 54.73 / 1)",
-    },
-  },
-  outline_variant: {
-    value: {
-      _light: "",
-      _dark: "hsl(0 0 16)",
-    },
-  },
+	text: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.90 0.02 54.73 / 1)",
+		},
+	},
+	subtext: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.70 0.04 54.73 / 1)",
+		},
+	},
+	subtext2: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 50)",
+		},
+	},
+	surface: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.16 0.02 54.73 / 1)",
+		},
+	},
+	surface_container: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.20 0.02 54.73 / 1)",
+		},
+	},
+	surface_container_high: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.22 0.02 54.73 / 1)",
+		},
+	},
+	hover: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.30 0.03 54.73 / 1)",
+		},
+	},
+	hover_variant: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 14)",
+		},
+	},
+	outline: {
+		value: {
+			_light: "",
+			_dark: "oklch(0.30 0.02 54.73 / 1)",
+		},
+	},
+	outline_variant: {
+		value: {
+			_light: "",
+			_dark: "hsl(0 0 16)",
+		},
+	},
 
-  bg: {
-    DEFAULT: {
-      value: {
-        _light: "{colors.surface}",
-        _dark: "red",
-      },
-    },
-  },
+	bg: {
+		DEFAULT: {
+			value: {
+				_light: "{colors.surface}",
+				_dark: "red",
+			},
+		},
+	},
 });
 
 // export const colors = defineSemanticTokens.colors({
