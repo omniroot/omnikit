@@ -15,7 +15,11 @@ export const inputRecipe = defineRecipe({
 		},
 		height: "var(--input-height)",
 		minW: "var(--input-height)",
+		transition: "border-color 200ms, focus-ring 200ms",
 		"--focus-color": "colors.colorPalette.focusRing",
+		_placeholder: {
+			color: "subtext2",
+		},
 		"--error-color": "colors.border.error",
 		_invalid: {
 			focusRingColor: "var(--error-color)",
@@ -64,26 +68,26 @@ export const inputRecipe = defineRecipe({
 			outline: {
 				bg: "transparent",
 				borderWidth: "1px",
-				borderColor: "border",
+				borderColor: "outline",
 				focusVisibleRing: "inside",
-				focusRingColor: "var(--focus-color)",
+				focusRingColor: "{colors.outline_variant}",
 			},
 			subtle: {
 				borderWidth: "1px",
 				borderColor: "transparent",
 				bg: "bg.muted",
 				focusVisibleRing: "inside",
-				focusRingColor: "var(--focus-color)",
+				focusRingColor: "{colors.outline_variant}",
 			},
 			flushed: {
 				bg: "transparent",
 				borderBottomWidth: "1px",
-				borderBottomColor: "border",
+				borderBottomColor: "outline",
 				borderRadius: "0",
 				px: "0",
 				_focusVisible: {
-					borderColor: "var(--focus-color)",
-					boxShadow: "0px 1px 0px 0px var(--focus-color)",
+					borderColor: "{colors.outline_variant}",
+					boxShadow: "0px 1px 0px 0px {colors.outline_variant}",
 					_invalid: {
 						borderColor: "var(--error-color)",
 						boxShadow: "0px 1px 0px 0px var(--error-color)",
