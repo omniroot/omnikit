@@ -16,15 +16,15 @@ export interface IEmoji {
 	unified: string;
 }
 
-const getEmojiById = (id: IEmoji["id"]): IEmoji | undefined => {
-	// @ts-expect-error
-	console.log("emo", data?.emojis);
-	const result = data?.emojis?.[id];
+// const getEmojiById = (id: IEmoji["id"]): IEmoji | undefined => {
+// 	// @ts-expect-error
+// 	console.log("emo", data?.emojis);
+// 	const result = data?.emojis?.[id];
 
-	console.log("Emo result", result);
+// 	console.log("Emo result", result);
 
-	return result;
-};
+// 	return result;
+// };
 
 console.log("@Emoji ", { data });
 
