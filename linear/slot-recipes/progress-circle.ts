@@ -2,7 +2,17 @@ import { defineSlotRecipe } from "@chakra-ui/react";
 
 export const progressCircleSlotRecipe = defineSlotRecipe({
 	className: "chakra-progress-circle",
-	slots: ["root", "label", "track", "range", "valueText", "view", "circle", "circleTrack", "circleRange"],
+	slots: [
+		"root",
+		"label",
+		"track",
+		"range",
+		"valueText",
+		"view",
+		"circle",
+		"circleTrack",
+		"circleRange",
+	],
 	base: {
 		root: {
 			display: "inline-flex",

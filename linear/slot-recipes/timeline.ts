@@ -1,7 +1,16 @@
 import { defineSlotRecipe } from "@chakra-ui/react";
 
 export const timelineSlotRecipe = defineSlotRecipe({
-	slots: ["root", "item", "content", "separator", "indicator", "connector", "title", "description"],
+	slots: [
+		"root",
+		"item",
+		"content",
+		"separator",
+		"indicator",
+		"connector",
+		"title",
+		"description",
+	],
 	className: "chakra-timeline",
 	base: {
 		root: {

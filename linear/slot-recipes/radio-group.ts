@@ -2,7 +2,16 @@ import { defineSlotRecipe } from "@chakra-ui/react";
 
 export const radioGroupSlotRecipe = defineSlotRecipe({
 	className: "chakra-radio-group",
-	slots: ["root", "label", "item", "itemText", "itemControl", "indicator", "itemAddon", "itemIndicator"],
+	slots: [
+		"root",
+		"label",
+		"item",
+		"itemText",
+		"itemControl",
+		"indicator",
+		"itemAddon",
+		"itemIndicator",
+	],
 	base: {
 		item: {
 			display: "inline-flex",
