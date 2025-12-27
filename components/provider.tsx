@@ -8,10 +8,10 @@ import "./provider.css";
 import { Toaster } from "@/theme/components/toaster.tsx";
 
 interface IOmnikitProvider extends ColorModeProviderProps {
-	theme?: "linear";
+	theme?: "kaizen";
 }
 
-export function OmnikitProvider({ theme = "linear", ...props }: IOmnikitProvider) {
+export function OmnikitProvider({ theme = "kaizen", ...props }: IOmnikitProvider) {
 	const [selectedTheme] = useState(theme);
 
 	return (
