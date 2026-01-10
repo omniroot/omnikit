@@ -1,8 +1,8 @@
-// import coffeeTheme from "@/theme/coffee/index.ts";
 import kaizenTheme from "@/theme/kaizen/index.ts";
+import linearTheme from "@/theme/linear/index.ts";
 
 export const themes = {
-	// linear: linearTheme,
+	linear: linearTheme,
 	kaizen: kaizenTheme,
 	// material: materialTheme,
 	// liquidGlass: liquidGlassTheme,

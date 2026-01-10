@@ -111,70 +111,87 @@ export const buttonRecipe = defineRecipe({
 			},
 		},
 		variant: {
-			solid: {
-				bg: "colorPalette.solid",
-				color: "colorPalette.contrast",
+			primary: {
+				bg: "primary",
+				color: "on-primary",
 				borderColor: "transparent",
-				_hover: {
-					bg: "colorPalette.solid/90",
-				},
-				_expanded: {
-					bg: "colorPalette.solid/90",
-				},
+				_hover: { bg: "primary-hover" },
+				_active: { bg: "primary-pressed" },
+				_focusVisible: { boxShadow: "0 0 0 4px primary-focus" },
 			},
-			subtle: {
-				bg: "colorPalette.subtle",
-				color: "colorPalette.fg",
+			secondary: {
+				bg: "secondary",
+				color: "on-secondary",
 				borderColor: "transparent",
-				_hover: {
-					bg: "colorPalette.muted",
-				},
-				_expanded: {
-					bg: "colorPalette.muted",
-				},
+				_hover: { bg: "secondary-hover" },
+				_active: { bg: "secondary-pressed" },
+				_focusVisible: { boxShadow: "0 0 0 4px rgba(0,0,0,0.06)" },
+			},
+
+			/* tertiary — accent/positive-ish controls (например success) */
+			tertiary: {
+				bg: "tertiary",
+				color: "on-tertiary",
+				borderColor: "transparent",
+				_hover: { bg: "tertiary-hover" },
+				_active: { bg: "tertiary-pressed" },
 			},
 			surface: {
-				bg: "colorPalette.subtle",
-				color: "colorPalette.fg",
-				shadow: "0 0 0px 1px var(--shadow-color)",
-				shadowColor: "colorPalette.muted",
-				_hover: {
-					bg: "colorPalette.muted",
-				},
-				_expanded: {
-					bg: "colorPalette.muted",
-				},
+				bg: "surface-container",
+				color: "on-surface",
+				borderColor: "transparent",
+				shadow: "0 0 0px 1px {colors.surface}" /* subtle visual separator */,
+				_hover: { bg: "surface-hover" },
+				_active: { bg: "surface-pressed" },
 			},
+
+			/* outline — обводка, использует outline tokens */
 			outline: {
+				bg: "transparent",
+				color: "on-surface",
 				borderWidth: "1px",
-				"--outline-color-legacy": "colors.colorPalette.muted",
-				"--outline-color": "colors.colorPalette.border",
-				borderColor: "var(--outline-color, var(--outline-color-legacy))",
-				color: "colorPalette.fg",
-				_hover: {
-					bg: "colorPalette.subtle",
-				},
-				_expanded: {
-					bg: "colorPalette.subtle",
-				},
+				borderColor: "outline",
+				_hover: { bg: "surface-container-highest", borderColor: "outline-variant" },
+				_active: { bg: "surface-pressed" },
+				_focusVisible: { boxShadow: "0 0 0 3px {colors.primary-focus}" },
 			},
 			ghost: {
 				bg: "transparent",
-				color: "colorPalette.fg",
-				_hover: {
-					bg: "colorPalette.subtle",
-				},
-				_expanded: {
-					bg: "colorPalette.subtle",
-				},
+				color: "on-surface",
+				borderColor: "transparent",
+				_hover: { bg: "surface-container-highest" },
+				_active: { bg: "surface-pressed" },
 			},
+
+			/* plain — текстовая кнопка без фоновой заливки */
 			plain: {
-				color: "colorPalette.fg",
+				bg: "transparent",
+				color: "on-surface",
+				borderColor: "transparent",
+				_hover: { textDecoration: "underline" },
+			},
+			accent: {
+				bg: "transparent",
+				color: "on-surface",
+				borderWidth: "1px",
+				borderColor: "transparent",
+				_hover: {
+					boxShadow: "0 6px 18px {colors.anim-accent-opaque}",
+					transform: "translateY(-1px)",
+				},
+				_active: { transform: "translateY(0)" },
+				_before: {
+					content: '""',
+					position: "absolute",
+					inset: 0,
+					borderRadius: "inherit",
+					pointerEvents: "none",
+				},
 			},
 		},
 	},
 	defaultVariants: {
 		size: "md",
-		variant: "solid",
+		variant: "primary",
 	},
 });

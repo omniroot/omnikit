@@ -3,58 +3,251 @@ import { defineSemanticTokens } from "@chakra-ui/react";
 export const colors = defineSemanticTokens.colors({
 	primary: {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#f8bb71",
+			_light: "#F8BB71",
+			_dark: "#F8BB71",
 		},
 	},
+	"on-primary": {
+		value: {
+			_light: "#3A2400",
+			_dark: "#4A2D00",
+		},
+	},
+	"primary-container": {
+		value: {
+			_light: "#FFE3C6",
+			_dark: "#6A3F00",
+		},
+	},
+	"on-primary-container": {
+		value: {
+			_light: "#2A1800",
+			_dark: "#FFE1BC",
+		},
+	},
+	"primary-hover": {
+		value: {
+			_light: "#F6A95A",
+			_dark: "#FFCB8F",
+		},
+	},
+	"primary-focus": {
+		value: {
+			_light: "rgba(248,187,113,0.16)",
+			_dark: "rgba(248,187,113,0.12)",
+		},
+	},
+	"primary-pressed": {
+		value: {
+			_light: "#D98A3F",
+			_dark: "#8B4B00",
+		},
+	},
+
 	secondary: {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#bf3221",
+			_light: "#8A6B4F",
+			_dark: "#D6C2B3",
 		},
 	},
+	"on-secondary": {
+		value: {
+			_light: "{colors.white}",
+			_dark: "#3B2C21",
+		},
+	},
+	"secondary-container": {
+		value: {
+			_light: "#F3E1D3",
+			_dark: "#524034",
+		},
+	},
+	"on-secondary-container": {
+		value: {
+			_light: "#2E1F13",
+			_dark: "#F3E1D3",
+		},
+	},
+	"secondary-hover": {
+		value: {
+			_light: "#7A5C45",
+			_dark: "#C3B0A0",
+		},
+	},
+	"secondary-pressed": {
+		value: {
+			_light: "#6B4E38",
+			_dark: "#A08C7B",
+		},
+	},
+
 	tertiary: {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#bccd9d",
+			_light: "#4F6F52",
+			_dark: "#B8D0B9",
 		},
 	},
-	surface: {
+	"on-tertiary": {
 		value: {
 			_light: "{colors.white}",
-			_dark: "#181818",
+			_dark: "#223527",
+		},
+	},
+	"tertiary-container": {
+		value: {
+			_light: "#D4E8D5",
+			_dark: "#384B3C",
+		},
+	},
+	"on-tertiary-container": {
+		value: {
+			_light: "#102016",
+			_dark: "#D4E8D5",
+		},
+	},
+	"tertiary-hover": {
+		value: {
+			_light: "#446048",
+			_dark: "#A6C1A7",
+		},
+	},
+	"tertiary-pressed": {
+		value: {
+			_light: "#375337",
+			_dark: "#7B946F",
+		},
+	},
+	background: {
+		value: {
+			_light: "#FFF8F2",
+			_dark: "#16130F",
+		},
+	},
+	"on-background": {
+		value: {
+			_light: "#1F1B16",
+			_dark: "#EAE1D9",
+		},
+	},
+
+	surface: {
+		value: {
+			_light: "#FFF8F2",
+			_dark: "#16130F",
+		},
+	},
+	"surface-container-low": {
+		value: {
+			_light: "#F9F1E8",
+			_dark: "#1C1814",
 		},
 	},
 	"surface-container": {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#252525",
+			_light: "#F3EBE2",
+			_dark: "#211D19",
 		},
 	},
 	"surface-container-high": {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#2e2e2e",
+			_light: "#EDE5DC",
+			_dark: "#2B2621",
 		},
 	},
+	"surface-container-highest": {
+		value: {
+			_light: "#EDE5DC",
+			_dark: "#3B3232",
+		},
+	},
+	"surface-hover": {
+		value: {
+			_light: "#FFF2E0",
+			_dark: "#1C1510",
+		},
+	},
+	"surface-pressed": {
+		value: {
+			_light: "#F0E4D6",
+			_dark: "#231C17",
+		},
+	},
+
 	"on-surface": {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#e0e0e0",
+			_light: "#1F1B16",
+			_dark: "#EAE1D9",
 		},
 	},
 	"on-surface-dark": {
 		value: {
-			_light: "{colors.white}",
-			_dark: "#cccccc",
+			_light: "#0F0D0A",
+			_dark: "#CFC4B8",
 		},
 	},
-	"on-surface-darker": {
+	"on-surface-darkest": {
+		value: {
+			_light: "#050403",
+			_dark: "#A89B8D",
+		},
+	},
+
+	outline: {
+		value: {
+			_light: "#D2C6BA",
+			_dark: "#3A352F",
+		},
+	},
+	"outline-variant": {
+		value: {
+			_light: "#BEB0A3",
+			_dark: "#2B2621",
+		},
+	},
+
+	error: {
+		value: {
+			_light: "#BA1A1A",
+			_dark: "#FFB4AB",
+		},
+	},
+	"on-error": {
 		value: {
 			_light: "{colors.white}",
-			_dark: "#b0b0b0",
+			_dark: "#690005",
 		},
 	},
+	"error-container": {
+		value: {
+			_light: "#FFDAD6",
+			_dark: "#93000A",
+		},
+	},
+	"on-error-container": {
+		value: {
+			_light: "#410002",
+			_dark: "#FFDAD6",
+		},
+	},
+
+	"anim-accent": {
+		value: {
+			_light: "#E55153",
+			_dark: "#E55153",
+		},
+	},
+	"anim-accent-opaque": {
+		value: {
+			_light: "rgba(229,81,83,0.12)",
+			_dark: "rgba(229,81,83,0.18)",
+		},
+	},
+	// outline: {
+	// 	value: {
+	// 		_light: "{colors.white}",
+	// 		_dark: "#54443A",
+	// 	},
+	// },
 	bg: {
 		DEFAULT: {
 			value: {

@@ -19,7 +19,7 @@ export const checkboxSlotRecipe = defineSlotRecipe({
 			color: "white",
 			borderWidth: "1px",
 			borderColor: "transparent",
-			borderRadius: "l1",
+			borderRadius: "lg",
 			cursor: "checkbox",
 			focusVisibleRing: "outside",
 			_icon: {
@@ -103,11 +103,11 @@ export const checkboxSlotRecipe = defineSlotRecipe({
 			},
 			solid: {
 				control: {
-					borderColor: "border.emphasized",
+					borderColor: "primary",
 					"&:is([data-state=checked], [data-state=indeterminate])": {
-						bg: "colorPalette.solid",
-						color: "colorPalette.contrast",
-						borderColor: "colorPalette.solid",
+						bg: "primary",
+						color: "on-primary",
+						borderColor: "primary",
 					},
 				},
 			},
