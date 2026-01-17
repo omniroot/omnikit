@@ -20,7 +20,7 @@ const MdListRoot = chakra("div", {
 		},
 
 		"&:has(:active)": {
-			gap: "2",
+			gap: "0.5",
 		},
 
 		"& > *:first-child": {
