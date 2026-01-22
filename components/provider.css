@@ -17,6 +17,36 @@
 	text-rendering: optimizeLegibility;
 }
 
+::selection {
+	color: var(--chakra-colors-on-primary);
+	background-color: var(--chakra-colors-primary);
+}
+
+/* полоса прокрутки */
+::-webkit-scrollbar {
+	width: 2px; /* для вертикальной */
+	height: 6px; /* для горизонтальной */
+}
+
+/* трек (фон полосы) */
+::-webkit-scrollbar-track {
+	/* background: var(--chakra-colors-surface); */
+	background: transparent;
+	border-radius: 8px;
+}
+
+/* сам ползунок */
+::-webkit-scrollbar-thumb {
+	/* background-color: #c98383cc; полупрозрачный цвет */
+	border-radius: 8px;
+	border: 2px solid var(--chakra-colors-primary); /* отступ внутри трека */
+}
+
+/* при наведении */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #e90000;
+}
+
 .liquid-glass {
 	position: relative;
 	background: rgba(12, 12, 12, 0.3); /* полупрозрачная база */

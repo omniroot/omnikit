@@ -71,7 +71,7 @@ export const selectSlotRecipe = defineSlotRecipe({
 			},
 		},
 		content: {
-			background: "bg.panel",
+			background: "surface",
 			display: "flex",
 			flexDirection: "column",
 			zIndex: "dropdown",
@@ -101,7 +101,7 @@ export const selectSlotRecipe = defineSlotRecipe({
 			textAlign: "start",
 			borderRadius: "l1",
 			_highlighted: {
-				bg: "bg.emphasized/60",
+				bg: "surface-container",
 			},
 			_disabled: {
 				pointerEvents: "none",
