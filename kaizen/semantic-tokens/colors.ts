@@ -139,7 +139,7 @@ export const colors = defineSemanticTokens.colors({
 	"surface-container-low": {
 		value: {
 			_light: "#F9F1E8",
-			_dark: "#1C1814",
+			_dark: "#0C0A09",
 		},
 	},
 	"surface-container": {
@@ -157,7 +157,7 @@ export const colors = defineSemanticTokens.colors({
 	"surface-container-highest": {
 		value: {
 			_light: "#EDE5DC",
-			_dark: "#3B3232",
+			_dark: "#41382F",
 		},
 	},
 	"surface-hover": {
@@ -195,7 +195,7 @@ export const colors = defineSemanticTokens.colors({
 	outline: {
 		value: {
 			_light: "#D2C6BA",
-			_dark: "#3A352F",
+			_dark: "#54443A",
 		},
 	},
 	"outline-variant": {

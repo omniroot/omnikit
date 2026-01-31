@@ -17,13 +17,16 @@ export const checkboxSlotRecipe = defineSlotRecipe({
 			justifyContent: "center",
 			flexShrink: "0",
 			color: "white",
-			borderWidth: "1px",
+			borderWidth: "2px",
 			borderColor: "transparent",
-			borderRadius: "lg",
+			borderRadius: "full",
 			cursor: "checkbox",
 			focusVisibleRing: "outside",
 			_icon: {
 				boxSize: "full",
+			},
+			_checked: {
+				borderRadius: "lg",
 			},
 			_invalid: {
 				colorPalette: "red",
